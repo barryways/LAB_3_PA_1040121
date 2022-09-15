@@ -78,15 +78,6 @@ void separacionDePalindromas() {
 //EJERCICIO 3
 
 //metodo recursivo para convertir bases a decimal
-void covertidorPrueba(int numeroSinConvertir,int baseOrigen, int contador) {
-	int contadorPotencias = 0;
-	while(numeroSinConvertir>0){
-		contador += (numeroSinConvertir % 10 * pow(baseOrigen, contadorPotencias));
-		numeroSinConvertir = numeroSinConvertir / 10;
-		contadorPotencias++;
-	}
-	cout << contador << endl;
-}
 
 int convertidorADecimal(int numeroSinConvertir, int baseOrigen, int numeroConvertido, int contadorPotencias) {
 	if (numeroSinConvertir<=0) {
@@ -100,33 +91,31 @@ int convertidorADecimal(int numeroSinConvertir, int baseOrigen, int numeroConver
 	}
 }
 
-//metodo recursivo para convertir de decimal a base M
+//metodo para convertir de decimal a base M
 void convertidorABaseM(int baseDestino, int numeroDecimal) { //codigo utilizado en base a StackOverflow
-	cout << baseDestino <<" esta es la base destino entrando al convertidor" <<endl;
-	cout << numeroDecimal << " esta es el numero decimal entrando al convertidor" << endl;
+
 	
 	int numeroDecimalCopia, resultado=0, contador = 0;
 	numeroDecimalCopia = numeroDecimal;
-	cout << numeroDecimalCopia << "este es la copia del decimal" << endl;
+
 	do {
 		numeroDecimalCopia = numeroDecimalCopia / baseDestino;
 		contador++;
 	} while (numeroDecimalCopia != 0);
 	numeroDecimalCopia = numeroDecimal;
-	cout << numeroDecimalCopia << "este es la copia del decimal 222" << endl;
+
 	int result[25];
-	cout << contador << " este es el contador entrando al for" << endl;
+
 	if (baseDestino > 1 && baseDestino < 10) {
 		for (int i = contador - 1; i >= 0; --i) {
 			resultado = (int)numeroDecimalCopia % (int)baseDestino;
-			cout << numeroDecimalCopia << " este es el decimal operacion del for" << endl;
-			cout << baseDestino << " esta es la ¿base del for" << endl;
+
 			result[i] = resultado;
-			cout << "este es el var result[i]" << result[i]<<endl;
+
 			numeroDecimalCopia = numeroDecimalCopia / baseDestino;
 		}
 		for (int i = 0; i < contador; ++i) {
-			cout << "El número "<<result[i];
+			cout <<result[i];
 		}
 		cout << " en base (" << baseDestino << ") es la conversion de la operacion solicitada" << endl;
 	}
@@ -262,8 +251,6 @@ void opcionesMenuBases() {
 
 		//salida de datos decimal
 		int numeroenDecimal = convertidorADecimal(numeroAConvertir, baseOrigen, contador, contadorExponentes);
-		cout << numeroenDecimal << endl;
-		covertidorPrueba(numeroAConvertir, baseOrigen, contador);
 		//salida de datos a base m 
 		convertidorABaseM(baseDestino, numeroenDecimal);
 	}
