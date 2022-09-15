@@ -1,0 +1,6 @@
+﻿  PA_Tarea1_Carlos_Barrientos_1040121_CLR.cpp
+E:\Carlos\source\repos\Programacion Avanzada\PA_Tarea1_Carlos_Barrientos_1040121_CLR\PA_Tarea1_Carlos_Barrientos_1040121_CLR.cpp(84,77): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+E:\Carlos\source\repos\Programacion Avanzada\PA_Tarea1_Carlos_Barrientos_1040121_CLR\PA_Tarea1_Carlos_Barrientos_1040121_CLR.cpp(96,85): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+E:\Carlos\source\repos\Programacion Avanzada\PA_Tarea1_Carlos_Barrientos_1040121_CLR\PA_Tarea1_Carlos_Barrientos_1040121_CLR.cpp(235,27): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  PA_Tarea1_Carlos_Barrientos_1040121_CLR.vcxproj -> E:\Carlos\source\repos\Programacion Avanzada\PA_Tarea1_Carlos_Barrientos_1040121_CLR\Debug\PA_Tarea1_Carlos_Barrientos_1040121_CLR.exe
